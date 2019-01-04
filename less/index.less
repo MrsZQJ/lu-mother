@@ -1,0 +1,145 @@
+@import './base.less';
+
+#header{
+    display: flex;
+    align-items: center;
+    height: .44rem;
+    background-color: #f7f7f7;
+    
+    h3{
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        font-weight: normal;
+    }
+    a{
+        width: .44rem;
+        height: .44rem;
+        display: block;
+        padding: .08rem;
+        img{
+            width: .27rem;
+            height: .27rem;
+            
+        }
+    }
+}
+
+#main{
+    .banner{
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #nav{
+        padding: .04rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            display: block;
+            width: 33.3%;
+            padding: .04rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .slide{
+        .row{
+            margin: 0;
+            .col-xs-3{
+                padding: 0;
+                a{
+                    display: block;
+                    border: 1px solid #ccc;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .fenlei{
+        padding: .15rem 0;
+        display: flex;
+        // height: 2.25rem;
+        background-color: #f1f1f1;
+        .zuo{
+            display: block;
+            width: 50%;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            img{
+                width: 100%;
+            }
+        }
+        .you{
+            display: block;
+            width: 50%;
+            img{
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+    .huodong{
+        // padding: .15rem 0;
+        .list-group{
+            a{
+                &.active{
+                    background-color: gray;
+                    border: 0;
+                    color: black;
+
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .biaoqian{
+        .nav-tabs{
+            li{
+                width: 50%;
+                text-align: center;
+                &.active{
+                    border-bottom: 3px red solid;
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane,
+            .active{
+                a{
+                    display: block;
+                    color: black;
+                    text-decoration: none;
+                    img{
+                        width: 100%;
+                    }
+                    h4{
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    height: .3rem;
+    background-color: #d3079e;
+    a{
+        line-height: .3rem;
+        margin: 0 .1rem;
+        font-weight: 600;
+        color: aliceblue;
+        &.right{
+            float: right;
+        }
+    }
+}
